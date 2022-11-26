@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron{
+    margin-bottom: 0px;
+    background-color: #081730!important;
+    margin-bottom: 0rem !important;
+  }
+  .btn-info {
+    background: linear-gradient(57deg, rgba(230,0,255,100%) 1%, rgba(243,7,29,100%) 100%);
+    border-color: #081730!important;
+  }
+
+  #dos{
+    color: white;
+  }
+
+
+</style>
+<body>
+  {% include "exam/navbar.html" %}
+<br>
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+  <div class="container text-center">
+    <h2 class="display-3 text-info" style="color: #0b0c0c;">Sistema de autoexamenes</h2>
+    <br>
+    <p class="display-4 d-none d-sm-block " id="dos">Tus examenes online!</p>
+    <p class="lead" id="dos">Registrate para iniciar tu primer cuestionario virtual</p>
+
+  
+    <p id="dos"><strong> Comienza tu aventura:</strong></p>
+    <a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px; border-radius: 0%;"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Registrate cómo estudiante</a>
+    
+    <br><br><br><br><br>
+  </div>  
+</section>
+  {% include "exam/footer.html" %}
+
+
+</body>
+
+</html>
